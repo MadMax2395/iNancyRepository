@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8943F5E823D1EC8F00C06B96 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8943F5E723D1EC8F00C06B96 /* data.json */; };
+		8943F5EA23D1EC9800C06B96 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943F5E923D1EC9800C06B96 /* Exercise.swift */; };
+		8943F5EC23D1ECA800C06B96 /* ExerciseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943F5EB23D1ECA800C06B96 /* ExerciseItem.swift */; };
 		F115142D23D1E73C00018CD2 /* iNancy WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F115142C23D1E73C00018CD2 /* iNancy WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F115143323D1E73C00018CD2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F115143123D1E73C00018CD2 /* Interface.storyboard */; };
 		F115143523D1E73D00018CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F115143423D1E73D00018CD2 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8943F5E723D1EC8F00C06B96 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		8943F5E923D1EC9800C06B96 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		8943F5EB23D1ECA800C06B96 /* ExerciseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseItem.swift; sourceTree = "<group>"; };
 		F115142823D1E73C00018CD2 /* iNancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F115142C23D1E73C00018CD2 /* iNancy WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iNancy WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F115143223D1E73C00018CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 				F115144423D1E73D00018CD2 /* ExtensionDelegate.swift */,
 				F115144623D1E73D00018CD2 /* NotificationController.swift */,
 				F115144823D1E73D00018CD2 /* NotificationView.swift */,
+				8943F5E723D1EC8F00C06B96 /* data.json */,
+				8943F5EB23D1ECA800C06B96 /* ExerciseItem.swift */,
+				8943F5E923D1EC9800C06B96 /* Exercise.swift */,
 				F115144A23D1E73D00018CD2 /* ComplicationController.swift */,
 				F115144C23D1E73E00018CD2 /* Assets.xcassets */,
 				F115145123D1E73E00018CD2 /* Info.plist */,
@@ -264,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F115145023D1E73E00018CD2 /* Preview Assets.xcassets in Resources */,
+				8943F5E823D1EC8F00C06B96 /* data.json in Resources */,
 				F115144D23D1E73E00018CD2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +289,9 @@
 				F115144123D1E73D00018CD2 /* ContentView.swift in Sources */,
 				F115144723D1E73D00018CD2 /* NotificationController.swift in Sources */,
 				F115144523D1E73D00018CD2 /* ExtensionDelegate.swift in Sources */,
+				8943F5EC23D1ECA800C06B96 /* ExerciseItem.swift in Sources */,
 				F115144923D1E73D00018CD2 /* NotificationView.swift in Sources */,
+				8943F5EA23D1EC9800C06B96 /* Exercise.swift in Sources */,
 				F115144B23D1E73D00018CD2 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
