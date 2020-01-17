@@ -1,0 +1,28 @@
+[
+    {
+        "id":1001,
+        "name":"esercizio1",
+        "imagename":"image1",
+        "description":"An exercise that helps your back",
+        "function":"back",
+        "duration":100,
+    },
+    
+    {
+        "id":1002,
+        "name":"esercizio2",
+        "imagename":"image1",
+        "description":"An exercise that helps your blood",
+        "function":"blood",
+        "duration":200,
+    },
+
+    {
+        "id":1003,
+        "name":"esercizio3",
+        "imagename":"image1",
+        "description":"An exercise that helps your mind",
+        "function":"mind",
+        "duration":200,
+    }
+]
