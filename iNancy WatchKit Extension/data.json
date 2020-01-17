@@ -2,27 +2,37 @@
     {
         "id":1001,
         "name":"esercizio1",
-        "imagename":"image1",
+        "imagename":"turtlerock",
         "description":"An exercise that helps your back",
-        "function":"back",
+        "function":"Back",
         "duration":100,
+        "suggestedWeeks": [
+            3 , 4
+        ]
     },
     
     {
         "id":1002,
         "name":"esercizio2",
-        "imagename":"image1",
+        "imagename":"turtlerock",
         "description":"An exercise that helps your blood",
-        "function":"blood",
+        "function":"Blood",
         "duration":200,
+        "suggestedWeeks": [
+            1 , 2
+        ]
     },
 
     {
         "id":1003,
         "name":"esercizio3",
-        "imagename":"image1",
+        "imagename":"turtlerock",
         "description":"An exercise that helps your mind",
-        "function":"mind",
+        "function":"Mind",
         "duration":200,
+        "suggestedWeeks": [
+            6 , 7
+        ]
     }
 ]
+

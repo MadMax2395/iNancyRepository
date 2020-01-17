@@ -9,24 +9,26 @@
 import Foundation
 import SwiftUI
 
+public enum Functionality : String,CaseIterable,Codable,Hashable {
+    case back = "Back"
+    case mind = "Mind"
+    case blood = "Blood"
+}
+
+
 struct Exercise : Codable,Identifiable,Hashable {
     
     var id:Int
     var name:String
     var imagename:String
     var description:String
-    var function: Function
+    var function: String//Functionality
     var duration : Int
-
-    enum Function : String,CaseIterable,Codable,Hashable {
-            case back="back"
-            case mind="mind"
-            case blood="blood"
-        }
+    var suggestedWeeks: [Int] = []
 }
 
+var exerciseList : [Exercise] = load("data.json")
 
-let exerciseData : [Exercise]=load("data.json")
 
 func load(_ filename:String) -> [Exercise]
 {
@@ -54,4 +56,3 @@ func load(_ filename:String) -> [Exercise]
         fatalError("Could not parse \(filename) as \([Exercise].self):\n\(error)")
     }
 }
-
