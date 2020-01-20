@@ -9,14 +9,24 @@
 import SwiftUI
 
 struct ExerciseChosen: View {
-   
+    var exerciseChosen: Exercise
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            Rectangle()
+
+        }.edgesIgnoringSafeArea(.bottom)
+        
+        
+        
+//        .background(Color.init(red: 142/255.0, green: 128/255.0, blue: 221/255.0))
+        
     }
 }
 
 struct ExerciseChosen_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseChosen()
+        ExerciseChosen(exerciseChosen: exerciseList[1])
     }
 }

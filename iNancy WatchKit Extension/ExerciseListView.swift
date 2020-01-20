@@ -6,8 +6,6 @@
 //  Copyright © 2020 Massimo Maddaluno. All rights reserved.
 //
 
-import SwiftUI
-import Combine
 
 //
 //struct LandmarkList: View {
@@ -23,20 +21,38 @@ import Combine
 //    }
 //}
 
+import SwiftUI
+import Combine
 
 struct ExerciseListView: View {
     var body: some View {
         
-        List(exerciseList){exercise in
-            NavigationLink(destination: ExerciseChosen()){
-                CardViewExercise(exercise: exercise)
-            }
-        
-        }.frame(width: 200, height: 130, alignment: .center)
-        .listStyle(CarouselListStyle())
-        
+            List(exerciseList){exercise in
+                
+                
+                    NavigationLink(destination: ExerciseChosen(exerciseChosen: exercise)){
+                        
+                       
+                            CardViewExercise(exercise: exercise)
+                            
+                         
+                    
+                        }
+                    .listStyle(CarouselListStyle())
+                    .scaledToFill()
+                        .listRowPlatterColor(Color.black)
+                
+                    
+                    
+                    
+                
+            
+        }
+            
+        }
+
     }
-}
+
     
 
 
@@ -45,4 +61,3 @@ struct ExerciseListView_Previews: PreviewProvider {
         ExerciseListView()
     }
 }
-

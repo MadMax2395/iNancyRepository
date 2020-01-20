@@ -17,6 +17,9 @@
 		8943F5F823D2229400C06B96 /* ExerciseChosen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943F5F723D2229400C06B96 /* ExerciseChosen.swift */; };
 		8943F5FA23D2229A00C06B96 /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943F5F923D2229900C06B96 /* ExerciseListView.swift */; };
 		8943F5FE23D222A600C06B96 /* ExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943F5FD23D222A600C06B96 /* ExerciseManager.swift */; };
+		89E4E0A323D66A7F00B41C6F /* ExerciseChosenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4E0A223D66A7F00B41C6F /* ExerciseChosenView.swift */; };
+		89E4E0A523D66AAD00B41C6F /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4E0A423D66AAD00B41C6F /* ProgressBarView.swift */; };
+		89E4E0A723D66AE900B41C6F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4E0A623D66AE900B41C6F /* TestView.swift */; };
 		F115142D23D1E73C00018CD2 /* iNancy WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F115142C23D1E73C00018CD2 /* iNancy WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F115143323D1E73C00018CD2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F115143123D1E73C00018CD2 /* Interface.storyboard */; };
 		F115143523D1E73D00018CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F115143423D1E73D00018CD2 /* Assets.xcassets */; };
@@ -84,6 +87,9 @@
 		8943F5F723D2229400C06B96 /* ExerciseChosen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseChosen.swift; sourceTree = "<group>"; };
 		8943F5F923D2229900C06B96 /* ExerciseListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
 		8943F5FD23D222A600C06B96 /* ExerciseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseManager.swift; sourceTree = "<group>"; };
+		89E4E0A223D66A7F00B41C6F /* ExerciseChosenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseChosenView.swift; sourceTree = "<group>"; };
+		89E4E0A423D66AAD00B41C6F /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		89E4E0A623D66AE900B41C6F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		F115142823D1E73C00018CD2 /* iNancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F115142C23D1E73C00018CD2 /* iNancy WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iNancy WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F115143223D1E73C00018CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 				8943F5F123D1EFB600C06B96 /* section.json */,
 				8943F5F723D2229400C06B96 /* ExerciseChosen.swift */,
 				8943F5F923D2229900C06B96 /* ExerciseListView.swift */,
+				89E4E0A223D66A7F00B41C6F /* ExerciseChosenView.swift */,
+				89E4E0A423D66AAD00B41C6F /* ProgressBarView.swift */,
+				89E4E0A623D66AE900B41C6F /* TestView.swift */,
 				8943F5F323D1F0A000C06B96 /* Section.swift */,
 				8943F5FD23D222A600C06B96 /* ExerciseManager.swift */,
 				8943F5EB23D1ECA800C06B96 /* CardViewExercise.swift */,
@@ -309,10 +318,13 @@
 			files = (
 				F115144323D1E73D00018CD2 /* HostingController.swift in Sources */,
 				F115144123D1E73D00018CD2 /* ContentView.swift in Sources */,
+				89E4E0A323D66A7F00B41C6F /* ExerciseChosenView.swift in Sources */,
 				F115144723D1E73D00018CD2 /* NotificationController.swift in Sources */,
 				F115144523D1E73D00018CD2 /* ExtensionDelegate.swift in Sources */,
+				89E4E0A523D66AAD00B41C6F /* ProgressBarView.swift in Sources */,
 				8943F5FA23D2229A00C06B96 /* ExerciseListView.swift in Sources */,
 				8943F5FE23D222A600C06B96 /* ExerciseManager.swift in Sources */,
+				89E4E0A723D66AE900B41C6F /* TestView.swift in Sources */,
 				8943F5F423D1F0A000C06B96 /* Section.swift in Sources */,
 				8943F5EE23D1EDB100C06B96 /* SectionList.swift in Sources */,
 				8943F5F623D2225100C06B96 /* Exercise.swift in Sources */,
