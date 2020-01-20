@@ -10,9 +10,12 @@ import SwiftUI
 
 struct SectionList: View {
     var body: some View {
-        List(SectionData) { (section) -> MenuCardView in
+        List(SectionData) { section in
+            NavigationLink(destination:ExerciseListView()){
             MenuCardView(section:section)
+            }
         }.frame(width: 200, height: 130, alignment: .center)
+            .listStyle(CarouselListStyle())
         
         
         

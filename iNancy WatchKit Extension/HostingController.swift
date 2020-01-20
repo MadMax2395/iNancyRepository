@@ -10,8 +10,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<MenuCardView> {
-    override var body: MenuCardView {
-        return MenuCardView(section:SectionData[0])
+class HostingController: WKHostingController<SectionList> {
+    override var body: SectionList {
+        return SectionList()
     }
 }

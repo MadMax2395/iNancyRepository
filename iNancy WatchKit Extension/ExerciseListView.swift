@@ -33,6 +33,7 @@ struct ExerciseListView: View {
             }
         
         }.frame(width: 200, height: 130, alignment: .center)
+        .listStyle(CarouselListStyle())
         
     }
 }
