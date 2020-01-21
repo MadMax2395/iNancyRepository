@@ -20,7 +20,7 @@ struct Exercise : Codable,Identifiable,Hashable {
     
     var id:Int
     var name:String
-    var imagename:String
+    var imageName:String
     var description:String
     var function: String//Functionality
     var duration : Int

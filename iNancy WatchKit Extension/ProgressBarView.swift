@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct ProgressionBarView: View {
-    @Binding var value:CGFloat
+    @Binding var value: CGFloat
+    var exerciseImageName: String
     
     var body: some View {
         ZStack {
@@ -22,7 +23,7 @@ struct ProgressionBarView: View {
                 .rotationEffect(Angle(degrees:-90))
 //            Text(getPercentage(value))
             if !checkPercentage(value){
-                Image("turtlerock")
+                Image(exerciseImageName)
                 .resizable()
                 .frame(width: 100, height: 80, alignment: .bottom)
             }

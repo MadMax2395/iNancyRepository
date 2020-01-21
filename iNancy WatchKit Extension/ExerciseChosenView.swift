@@ -1,5 +1,5 @@
 //
-//  ExerciseChosenView.swift
+//  TestView.swift
 //  iNancy WatchKit Extension
 //
 //  Created by Simone Punzo on 21/01/2020.
@@ -9,14 +9,28 @@
 import SwiftUI
 
 struct ExerciseChosenView: View {
-    var exerciseChosen: Exercise
+    
+    @State var progressBarValue:CGFloat = 0
+    var exercise: Exercise
+    
     var body: some View {
-        ExerciseChosen(exerciseChosen: exerciseChosen)
+        VStack {
+            ProgressionBarView(value: $progressBarValue, exerciseImageName: exercise.imageName)
+        }.onAppear {
+            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+                self.progressBarValue += (0.01) // 1/(10*durata), esempio: 180 secondi è: self.progressBarValue += (0.00055556)
+                if (self.progressBarValue >= 1.0) {
+                    timer.invalidate()
+                }
+            }
+        }
     }
 }
 
-struct ExerciseChosenView_Previews: PreviewProvider {
+#if DEBUG
+struct TestView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseChosen(exerciseChosen: exerciseList[1])
+        ExerciseChosenView(exercise: exerciseList[1])
     }
 }
+#endif

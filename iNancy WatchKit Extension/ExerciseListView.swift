@@ -30,7 +30,7 @@ struct ExerciseListView: View {
             List(exerciseList){exercise in
                 
                 
-                    NavigationLink(destination: ExerciseChosen(exerciseChosen: exercise)){
+                NavigationLink(destination: ExerciseChosenView(exercise: exercise)){
                         
                        
                             CardViewExercise(exercise: exercise)

@@ -2,7 +2,7 @@
     {
         "id":1001,
         "name":"esercizio1",
-        "imagename":"turtlerock",
+        "imageName":"turtlerock",
         "description":"An exercise that helps your back",
         "function":"Back",
         "duration":100,
@@ -14,7 +14,7 @@
     {
         "id":1002,
         "name":"esercizio2",
-        "imagename":"turtlerock",
+        "imageName":"turtlerock",
         "description":"An exercise that helps your blood",
         "function":"Blood",
         "duration":200,
@@ -26,7 +26,7 @@
     {
         "id":1003,
         "name":"esercizio3",
-        "imagename":"turtlerock",
+        "imageName":"turtlerock",
         "description":"An exercise that helps your mind",
         "function":"Mind",
         "duration":200,
