@@ -10,11 +10,11 @@ import Foundation
 import SwiftUI
 
 
-struct Section : Codable,Identifiable,Hashable{
+public struct Section : Codable,Identifiable,Hashable{
         
-    var id:Int
-    var category:String
-    var imageName:String
+   public var id:Int
+   public var category:String
+   public var imageName:String
 //
 //    enum Category: String,CaseIterable,Codable,Hashable{
 //        case
