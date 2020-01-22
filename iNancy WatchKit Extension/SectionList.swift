@@ -13,8 +13,8 @@ struct SectionList: View {
         
 
         
-        List(SectionData) { section in
-            NavigationLink(destination:ExerciseListView()){
+        List(SectionManager.shared.getSectionList()) { section in
+            NavigationLink(destination:ExerciseListView(functionSection:Section.category)){
                 MenuCardView(section:section)
                 
                 

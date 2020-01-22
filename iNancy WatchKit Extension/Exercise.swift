@@ -9,11 +9,11 @@
 import Foundation
 import SwiftUI
 
-public enum Functionality : String,CaseIterable,Codable,Hashable {
-    case back = "Back"
-    case mind = "Mind"
-    case blood = "Blood"
-}
+//public enum Functionality : String,CaseIterable,Codable,Hashable {
+//    case back = "Back"
+//    case mind = "Mind"
+//    case blood = "Blood"
+//}
 
 
 public struct Exercise : Codable,Identifiable,Hashable {

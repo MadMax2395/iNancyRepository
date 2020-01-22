@@ -1,11 +1,11 @@
 [
     {
         "id":1001,
-        "name":"esercizio1",
-        "imageName":"turtlerock",
+        "name":"Camel Pose",
+        "imageName":"camelPose",
         "description":"An exercise that helps your back",
         "function":"Back",
-        "duration":100,
+        "duration":120,
         "suggestedWeeks": [
             3 , 4
         ]
@@ -13,10 +13,10 @@
     
     {
         "id":1002,
-        "name":"esercizio2",
-        "imageName":"turtlerock",
+        "name":"Pigeon Pose",
+        "imageName":"pigeonPose",
         "description":"An exercise that helps your blood",
-        "function":"Blood",
+        "function":"Back",
         "duration":200,
         "suggestedWeeks": [
             1 , 2
