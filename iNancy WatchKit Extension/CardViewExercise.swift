@@ -26,9 +26,9 @@ struct CardViewExercise: View {
                                 
                                 HStack{
                                     
-                                    Text("\(exercise.function)")
+                                    Text("\(exercise.name)")
                                         .font(.caption)
-                                        .padding(.top, 15)
+                                        .padding(.top, 18)
 //                                        .padding(.leading, 2)
                                     
                                     Spacer()
@@ -49,15 +49,23 @@ struct CardViewExercise: View {
                                 HStack{
                                     
                                     Spacer()
-                                    Text("\(exercise.duration)")
-                                        .font(.caption)
-                                        .padding(.bottom, 10)
-                                        .padding(.trailing, 2)
+                                    Text("\(exercise.duration / 60) min")
+//                                        .foregroundColor(Color.init(red: 165/255.0, green: 127/255.0, blue: 127/255.0))
+                                        
+                                    .padding(.bottom, 13)
+                                    .padding(.trailing, -2)
+                                    
+//                                    Text("min")
+//                                        .font(.caption)
+//                                        .padding(.bottom, 10)
+//                                        .padding(.leading, -2)
+                                   
                                         
                                 }
                                 
                                 
                                 Spacer()
+                                
                                 
                             }
                     )

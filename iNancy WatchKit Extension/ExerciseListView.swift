@@ -25,10 +25,10 @@ import SwiftUI
 import Combine
 
 struct ExerciseListView: View {
-    @Binding var functionSection: String
+    var functionSection: String
     var body: some View {
         
-        List(ExerciseManager.shared.getList(function: functionSection)){exercise in
+        List(ExerciseManager.shared.getList2(function: functionSection)){exercise in
                 
                 
             NavigationLink(destination: ExerciseChosenView(exercise: exercise)){
@@ -49,7 +49,7 @@ struct ExerciseListView: View {
                 
             
                 }
-                .navigationBarTitle(Text("Menu")).navigationBarHidden(false)
+                .navigationBarTitle(Text("iNancy")).navigationBarHidden(false)
             .scaledToFit()
             .listStyle(CarouselListStyle())
         .listRowPlatterColor(Color.clear)

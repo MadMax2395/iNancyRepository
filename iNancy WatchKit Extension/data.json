@@ -15,7 +15,7 @@
         "id":1002,
         "name":"Pigeon Pose",
         "imageName":"pigeonPose",
-        "description":"An exercise that helps your blood",
+        "description":"An exercise that helps your back",
         "function":"Back",
         "duration":200,
         "suggestedWeeks": [
@@ -25,14 +25,27 @@
 
     {
         "id":1003,
-        "name":"esercizio3",
-        "imageName":"turtlerock",
-        "description":"An exercise that helps your mind",
-        "function":"Mind",
+        "name":"Lotus Pose",
+        "imageName":"lotusPose",
+        "description":"An exercise that helps your blood pressure",
+        "function":"Pressure",
+        "duration":200,
+        "suggestedWeeks": [
+            6 , 7
+        ]
+    },
+    
+    {
+        "id":1004,
+        "name":"Warrior Pose",
+        "imageName":"warriorPose",
+        "description":"An exercise that helps your legs",
+        "function":"Legs",
         "duration":200,
         "suggestedWeeks": [
             6 , 7
         ]
     }
+    
 ]
 

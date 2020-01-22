@@ -12,22 +12,26 @@ struct MenuCardView: View {
     var section : Section
     var body: some View {
         
-        VStack{
-               Rectangle()
+        
+            
+        
+              
+//                .foregroundColor(Color.clear)
 //                            .frame(width: 170, height: 150, alignment: .center)
             
-                    .cornerRadius(20)
-                    .foregroundColor(Color.init(red: 142/255.0, green: 128/255.0, blue: 221/255.0))
-                     .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
+//                    .cornerRadius(20)
+//                    .foregroundColor(Color.init(red: 142/255.0, green: 128/255.0, blue: 221/255.0))
+//                     .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
             
             
-                   .overlay(
+//                   .overlay(
             HStack{
                 
                 Text(section.category)
                     .font(.caption)
                     .padding(.bottom, 10)
                     .padding(.trailing, 2)
+//                    .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
                 
                 Spacer()
                 
@@ -40,10 +44,12 @@ struct MenuCardView: View {
                 
                 
         }
-                   )
+        
+//                   )
             
             
-        }.mask(Rectangle().cornerRadius(20))
+        
+//        .mask(Rectangle().cornerRadius(20))
         
         
     }
@@ -93,6 +99,10 @@ struct MenuCardView: View {
 
 struct MenuCardView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuCardView(section:SectionData[0])
+       
+            MenuCardView(section:SectionData[0])
+        
+        
+        
     }
 }

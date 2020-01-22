@@ -15,6 +15,7 @@ public struct Section : Codable,Identifiable,Hashable{
    public var id:Int
    public var category:String
    public var imageName:String
+   public var function: String
 //
 //    enum Category: String,CaseIterable,Codable,Hashable{
 //        case

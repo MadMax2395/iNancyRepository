@@ -122,11 +122,14 @@ public class ExerciseManager{
     
     
     
-    public func getList(function: String) -> [Exercise]{
+    public func getList2(function: String) -> [Exercise]{
         var returnList : [Exercise] = []
         
-        for (i, value) in self.exerciseList.enumerated(){
-            if value.description == function{
+        
+        
+        for (_, value) in self.exerciseList.enumerated(){
+            if value.function == function{
+                print(value)
                 returnList.append(value)
             }
         }

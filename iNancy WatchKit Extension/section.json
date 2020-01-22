@@ -3,12 +3,14 @@
     {
         "id":2001,
         "category":"Sustain your back",
+        "function":"Back",
         "imageName":"back",
     },
     
     {
         "id":2002,
         "category":"Improve your circulation",
+        "function":"Pressure",
         "imageName":"pressure",
     },
 
@@ -16,6 +18,7 @@
     {
         "id":2003,
         "category":"Train your legs",
+        "function":"Legs",
         "imageName":"legs",
     }
 

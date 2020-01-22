@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ExerciseChosenView: View {
-    
+    @State private var timerItem : Timer?
     @State var progressBarValue:CGFloat = 0
     var exercise: Exercise
     
@@ -18,15 +18,25 @@ struct ExerciseChosenView: View {
             ProgressionBarView(value: $progressBarValue, exerciseImageName: exercise.imageName)
             }
         .navigationBarTitle(Text("Exercises")).navigationBarHidden(false)
-        .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
-                self.progressBarValue += (0.01) // 1/(10*durata), esempio: 180 secondi è: self.progressBarValue += (0.00055556)
+        .onAppear() {
+            self.timerItem=Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+                self.progressBarValue += 
+                    CGFloat( 0.1/(Double(self.exercise.duration))) // (0.01) 1/(10*durata), esempio: 180 secondi è: self.progressBarValue += (0.00055556)
                 if (self.progressBarValue >= 1.0) {
                     WKInterfaceDevice.current().play(.success)
                     timer.invalidate()
                 }
             }
         }
+        .onDisappear(){
+            self.timerItem?.invalidate()
+        }
+        
+        
+    
+    
+    
+        
     }
 }
 
