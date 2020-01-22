@@ -19,13 +19,13 @@ struct ProgressionBarView: View {
                 .stroke(LinearGradient.init(gradient: Gradient.init(colors: [Color.init(red: 233/255.0, green: 0/255.0, blue: 123/255.0), Color.init(red: 235/255.0, green: 74/255.0, blue: 159/255.0)]), startPoint: .top, endPoint: .bottom), lineWidth: 10)
 //                .stroke(Color.init(red: 233/255.0, green: 0/255.0, blue: 123/255.0), lineWidth:10)
                 
-                .frame(width:150)
+                .frame(width:130)
                 .rotationEffect(Angle(degrees:-90))
 //            Text(getPercentage(value))
             if !checkPercentage(value){
                 Image(exerciseImageName)
                 .resizable()
-                .frame(width: 100, height: 80, alignment: .bottom)
+                .frame(width: 80, height: 80, alignment: .bottom)
             }
             else{
 

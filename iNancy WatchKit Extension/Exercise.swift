@@ -16,15 +16,15 @@ public enum Functionality : String,CaseIterable,Codable,Hashable {
 }
 
 
-struct Exercise : Codable,Identifiable,Hashable {
+public struct Exercise : Codable,Identifiable,Hashable {
     
-    var id:Int
-    var name:String
-    var imageName:String
-    var description:String
-    var function: String//Functionality
-    var duration : Int
-    var suggestedWeeks: [Int] = []
+    public var id:Int
+    public var name:String
+    public var imageName:String
+    public var description:String
+    public var function: String//Functionality
+    public var duration : Int
+    public var suggestedWeeks: [Int] = []
 }
 
 var exerciseList : [Exercise] = load("data.json")

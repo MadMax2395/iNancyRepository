@@ -16,8 +16,9 @@ struct CardViewExercise: View {
             Rectangle()
 //                .frame(width: 170, height: 150, alignment: .center)
                     .cornerRadius(20)
-            //        .foregroundColor(Color.init(red: 142/255.0, green: 128/255.0, blue: 221/255.0))
+                 //   .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
                         .foregroundColor(Color.clear)
+            
 
                         
                         .overlay(
@@ -27,8 +28,8 @@ struct CardViewExercise: View {
                                     
                                     Text("\(exercise.function)")
                                         .font(.caption)
-                                        .padding(.top, 10)
-                                        .padding(.leading, 10)
+                                        .padding(.top, 15)
+//                                        .padding(.leading, 2)
                                     
                                     Spacer()
                                 }
@@ -39,7 +40,7 @@ struct CardViewExercise: View {
                                     Image(exercise.imageName)
                                         .resizable()
                                 
-                                        .frame(width: 100, height: 100, alignment: .bottom)
+                                        .frame(width: 80, height: 85, alignment: .center)
                                 
                                 
                                 
@@ -50,7 +51,9 @@ struct CardViewExercise: View {
                                     Spacer()
                                     Text("\(exercise.duration)")
                                         .font(.caption)
-                                        .padding(.trailing, 10)
+                                        .padding(.bottom, 10)
+                                        .padding(.trailing, 2)
+                                        
                                 }
                                 
                                 
@@ -58,72 +61,16 @@ struct CardViewExercise: View {
                                 
                             }
                     )
-            
-//            Button(action: {
-//                // your action here
-//            }) {
-//                Text("Button title")
-//            }.frame(width: 100, height: 100)
-//                .aspectRatio(.init(width: 50, height: 50), contentMode: .fit)
-            
-            
         }
-//         Rectangle()
-//        .cornerRadius(20)
-////        .foregroundColor(Color.init(red: 142/255.0, green: 128/255.0, blue: 221/255.0))
-//            .foregroundColor(Color.clear)
-//
-//
-//            .overlay(
-//                VStack{
-//
-//                    HStack{
-//
-//                        Text("\(exercise.function)")
-//                            .font(.caption)
-//                            .padding(.top, 10)
-//                            .padding(.leading, 10)
-//
-//                        Spacer()
-//                    }
-//
-//                    Spacer()
-//
-//
-//                        Image(exercise.imagename)
-//                            .resizable()
-//                            .frame(width: 100, height: 80, alignment: .bottom)
-//
-//
-//
-//                    Spacer()
-//
-//                    HStack{
-//
-//                        Spacer()
-//                        Text("\(exercise.duration)")
-//                            .font(.caption)
-//                            .padding(.trailing, 10)
-//                    }
-//
-//
-//                    Spacer()
-//
-//                }
-//
-//        )
-//
-//
-                
-                
-            
-            
-            
-            
-            //                .padding(.trailing, 70) // stringe tutta la scritta a sinistra
-
-//        .edgesIgnoringSafeArea(.bottom)
-//        .background(Color.clear)
+        
+        
+        //            Button(action: {
+        //                // your action here
+        //            }) {
+        //                Text("Button title")
+        //            }.frame(width: 100, height: 100)
+        //                .aspectRatio(.init(width: 50, height: 50), contentMode: .fit)
+        
     }
     
 }

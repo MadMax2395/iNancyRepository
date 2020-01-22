@@ -27,7 +27,7 @@ import Combine
 struct ExerciseListView: View {
     var body: some View {
         
-            List(exerciseList){exercise in
+        List(ExerciseManager.shared.getList()){exercise in
                 
                 
                 NavigationLink(destination: ExerciseChosenView(exercise: exercise)){
@@ -38,16 +38,20 @@ struct ExerciseListView: View {
                          
                     
                         }
-                    .listStyle(CarouselListStyle())
-                    .scaledToFill()
-                        .listRowPlatterColor(Color.black)
+//                    .listStyle(CarouselListStyle())
+                    .scaledToFit()
+//                        .listRowPlatterColor(Color.black)
                 
                     
                     
                     
                 
             
-        }
+                }
+                .navigationBarTitle(Text("Menu")).navigationBarHidden(false)
+            .scaledToFit()
+            .listStyle(CarouselListStyle())
+        .listRowPlatterColor(Color.clear)
             
         }
 

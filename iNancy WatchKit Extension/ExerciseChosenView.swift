@@ -16,10 +16,13 @@ struct ExerciseChosenView: View {
     var body: some View {
         VStack {
             ProgressionBarView(value: $progressBarValue, exerciseImageName: exercise.imageName)
-        }.onAppear {
+            }
+        .navigationBarTitle(Text("Exercises")).navigationBarHidden(false)
+        .onAppear {
             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
                 self.progressBarValue += (0.01) // 1/(10*durata), esempio: 180 secondi è: self.progressBarValue += (0.00055556)
                 if (self.progressBarValue >= 1.0) {
+                    WKInterfaceDevice.current().play(.success)
                     timer.invalidate()
                 }
             }
