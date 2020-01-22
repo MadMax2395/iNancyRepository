@@ -25,12 +25,13 @@ import SwiftUI
 import Combine
 
 struct ExerciseListView: View {
+    @Binding var functionSection: String
     var body: some View {
         
-        List(ExerciseManager.shared.getList()){exercise in
+        List(ExerciseManager.shared.getList(function: functionSection)){exercise in
                 
                 
-                NavigationLink(destination: ExerciseChosenView(exercise: exercise)){
+            NavigationLink(destination: ExerciseChosenView(exercise: exercise)){
                         
                        
                             CardViewExercise(exercise: exercise)
@@ -59,9 +60,9 @@ struct ExerciseListView: View {
 
     
 
-
-struct ExerciseListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExerciseListView()
-    }
-}
+//
+//struct ExerciseListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ExerciseListView(functionSection: "ciao")
+//    }
+//}
