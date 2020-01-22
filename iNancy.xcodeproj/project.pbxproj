@@ -31,7 +31,7 @@
 		F115144D23D1E73E00018CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F115144C23D1E73E00018CD2 /* Assets.xcassets */; };
 		F115145023D1E73E00018CD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F115144F23D1E73E00018CD2 /* Preview Assets.xcassets */; };
 		F1D2B9DD23D74B3800263BA2 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2B9DC23D74B3800263BA2 /* RowView.swift */; };
-		F1E823F623D755E70025771D /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E823F523D755E70025771D /* FirstView.swift */; };
+		F1E823F623D755E70025771D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E823F523D755E70025771D /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +105,7 @@
 		F115145123D1E73E00018CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F115145223D1E73E00018CD2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		F1D2B9DC23D74B3800263BA2 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
-		F1E823F523D755E70025771D /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		F1E823F523D755E70025771D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,7 @@
 				F115144823D1E73D00018CD2 /* NotificationView.swift */,
 				8943F5E723D1EC8F00C06B96 /* data.json */,
 				8943F5F123D1EFB600C06B96 /* section.json */,
-				F1E823F523D755E70025771D /* FirstView.swift */,
+				F1E823F523D755E70025771D /* SettingView.swift */,
 				F1D2B9DC23D74B3800263BA2 /* RowView.swift */,
 				8943F5EF23D1EDD300C06B96 /* MenuCardView.swift */,
 				8943F5ED23D1EDB100C06B96 /* SectionList.swift */,
@@ -328,7 +328,7 @@
 				8943F5EE23D1EDB100C06B96 /* SectionList.swift in Sources */,
 				8943F5F623D2225100C06B96 /* Exercise.swift in Sources */,
 				F1D2B9DD23D74B3800263BA2 /* RowView.swift in Sources */,
-				F1E823F623D755E70025771D /* FirstView.swift in Sources */,
+				F1E823F623D755E70025771D /* SettingView.swift in Sources */,
 				8943F5EC23D1ECA800C06B96 /* CardViewExercise.swift in Sources */,
 				F115144923D1E73D00018CD2 /* NotificationView.swift in Sources */,
 				F115144B23D1E73D00018CD2 /* ComplicationController.swift in Sources */,

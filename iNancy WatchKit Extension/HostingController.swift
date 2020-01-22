@@ -10,8 +10,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<SectionList> {
-    override var body: SectionList {
-        return SectionList()
+class HostingController: WKHostingController<SettingView> {
+    override var body: SettingView {
+        return SettingView()
     }
 }
