@@ -31,7 +31,6 @@
 		F115144B23D1E73D00018CD2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115144A23D1E73D00018CD2 /* ComplicationController.swift */; };
 		F115144D23D1E73E00018CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F115144C23D1E73E00018CD2 /* Assets.xcassets */; };
 		F115145023D1E73E00018CD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F115144F23D1E73E00018CD2 /* Preview Assets.xcassets */; };
-		F1D2B9DD23D74B3800263BA2 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2B9DC23D74B3800263BA2 /* RowView.swift */; };
 		F1E823F623D755E70025771D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E823F523D755E70025771D /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +105,6 @@
 		F115144F23D1E73E00018CD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F115145123D1E73E00018CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F115145223D1E73E00018CD2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		F1D2B9DC23D74B3800263BA2 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		F1E823F523D755E70025771D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,26 +151,16 @@
 		F115143F23D1E73D00018CD2 /* iNancy WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F1B1AA9723D8B39100F97780 /* JSON */,
+				F1B1AA9623D8B32000F97780 /* Struct&Manager */,
+				F1B1AA9823D8B48500F97780 /* Module */,
+				F1B1AA9923D8B70B00F97780 /* View */,
 				F115144023D1E73D00018CD2 /* ContentView.swift */,
 				F115144223D1E73D00018CD2 /* HostingController.swift */,
 				F115144423D1E73D00018CD2 /* ExtensionDelegate.swift */,
 				F115144623D1E73D00018CD2 /* NotificationController.swift */,
 				F115144823D1E73D00018CD2 /* NotificationView.swift */,
-				8943F5E723D1EC8F00C06B96 /* data.json */,
-				8943F5F123D1EFB600C06B96 /* section.json */,
-				F1E823F523D755E70025771D /* SettingView.swift */,
-				F1D2B9DC23D74B3800263BA2 /* RowView.swift */,
-				8943F5EF23D1EDD300C06B96 /* MenuCardView.swift */,
-				8943F5ED23D1EDB100C06B96 /* SectionList.swift */,
-				8943F5EB23D1ECA800C06B96 /* CardViewExercise.swift */,
-				8943F5F923D2229900C06B96 /* ExerciseListView.swift */,
-				89E4E0A423D66AAD00B41C6F /* ProgressBarView.swift */,
-				89E4E0A623D66AE900B41C6F /* ExerciseChosenView.swift */,
-				8943F5FD23D222A600C06B96 /* ExerciseManager.swift */,
-				8943F5F323D1F0A000C06B96 /* Section.swift */,
-				89E4E0AA23D8895000B41C6F /* SectionManager.swift */,
 				F115144A23D1E73D00018CD2 /* ComplicationController.swift */,
-				8943F5F523D2225100C06B96 /* Exercise.swift */,
 				F115144C23D1E73E00018CD2 /* Assets.xcassets */,
 				F115145123D1E73E00018CD2 /* Info.plist */,
 				F115145223D1E73E00018CD2 /* PushNotificationPayload.apns */,
@@ -187,6 +175,47 @@
 				F115144F23D1E73E00018CD2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1B1AA9623D8B32000F97780 /* Struct&Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8943F5F323D1F0A000C06B96 /* Section.swift */,
+				89E4E0AA23D8895000B41C6F /* SectionManager.swift */,
+				8943F5F523D2225100C06B96 /* Exercise.swift */,
+				8943F5FD23D222A600C06B96 /* ExerciseManager.swift */,
+			);
+			path = "Struct&Manager";
+			sourceTree = "<group>";
+		};
+		F1B1AA9723D8B39100F97780 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8943F5E723D1EC8F00C06B96 /* data.json */,
+				8943F5F123D1EFB600C06B96 /* section.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F1B1AA9823D8B48500F97780 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				8943F5EF23D1EDD300C06B96 /* MenuCardView.swift */,
+				8943F5EB23D1ECA800C06B96 /* CardViewExercise.swift */,
+				89E4E0A423D66AAD00B41C6F /* ProgressBarView.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F1B1AA9923D8B70B00F97780 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1E823F523D755E70025771D /* SettingView.swift */,
+				8943F5ED23D1EDB100C06B96 /* SectionList.swift */,
+				8943F5F923D2229900C06B96 /* ExerciseListView.swift */,
+				89E4E0A623D66AE900B41C6F /* ExerciseChosenView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +359,6 @@
 				8943F5F423D1F0A000C06B96 /* Section.swift in Sources */,
 				8943F5EE23D1EDB100C06B96 /* SectionList.swift in Sources */,
 				8943F5F623D2225100C06B96 /* Exercise.swift in Sources */,
-				F1D2B9DD23D74B3800263BA2 /* RowView.swift in Sources */,
 				F1E823F623D755E70025771D /* SettingView.swift in Sources */,
 				8943F5EC23D1ECA800C06B96 /* CardViewExercise.swift in Sources */,
 				F115144923D1E73D00018CD2 /* NotificationView.swift in Sources */,
