@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6875833623D9FF3E006F88A9 /* SettingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6875833523D9FF3E006F88A9 /* SettingCardView.swift */; };
 		8943F5E823D1EC8F00C06B96 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8943F5E723D1EC8F00C06B96 /* data.json */; };
 		8943F5EC23D1ECA800C06B96 /* CardViewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943F5EB23D1ECA800C06B96 /* CardViewExercise.swift */; };
 		8943F5EE23D1EDB100C06B96 /* SectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943F5ED23D1EDB100C06B96 /* SectionList.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6875833523D9FF3E006F88A9 /* SettingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCardView.swift; sourceTree = "<group>"; };
 		8943F5E723D1EC8F00C06B96 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		8943F5EB23D1ECA800C06B96 /* CardViewExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewExercise.swift; sourceTree = "<group>"; };
 		8943F5ED23D1EDB100C06B96 /* SectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionList.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			children = (
 				8943F5EF23D1EDD300C06B96 /* MenuCardView.swift */,
 				8943F5EB23D1ECA800C06B96 /* CardViewExercise.swift */,
+				6875833523D9FF3E006F88A9 /* SettingCardView.swift */,
 				89E4E0A423D66AAD00B41C6F /* ProgressBarView.swift */,
 			);
 			path = Module;
@@ -355,6 +358,7 @@
 				89E4E0A523D66AAD00B41C6F /* ProgressBarView.swift in Sources */,
 				8943F5FA23D2229A00C06B96 /* ExerciseListView.swift in Sources */,
 				8943F5FE23D222A600C06B96 /* ExerciseManager.swift in Sources */,
+				6875833623D9FF3E006F88A9 /* SettingCardView.swift in Sources */,
 				89E4E0A723D66AE900B41C6F /* ExerciseChosenView.swift in Sources */,
 				8943F5F423D1F0A000C06B96 /* Section.swift in Sources */,
 				8943F5EE23D1EDB100C06B96 /* SectionList.swift in Sources */,
