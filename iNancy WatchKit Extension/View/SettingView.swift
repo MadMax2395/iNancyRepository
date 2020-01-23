@@ -10,69 +10,95 @@ import SwiftUI
 import UserNotifications
 
 struct SettingView: View {
-    @State private var weeksIndex = 0
-    @State private var daysIndex = 0
-    var defaultweeks = UserDefaults.standard
-//    var defaultdays = UserDefaults.standard
-   let title = "It's time to train"
-
+    @State var hoursString : String!
+    @State var minuteString : String!
+    @State var dateComponents = DateComponents()
+    
+    @State private var hoursIndex = 0
+    @State private var minutesIndex = 0
+    var defaultHours = UserDefaults.standard
+    var defaultMinutes = UserDefaults.standard
+    @State private var showingAlert = false
+    //    var defaultdays = UserDefaults.standard
+    let title = "It's time to train"
+    
     let message = "come and train"
     @State var alert = false
-    var rootView = SectionList()
+    
+    
     var body: some View {
         VStack{
-        HStack{
-            Picker(selection: $weeksIndex , label: Text("weeks:")
-                .font(.system(size: 12)).fontWeight(.bold)
-                .minimumScaleFactor(0.001)
-                .padding(.horizontal, 2)
-                .scaledToFill()){
-                     ForEach(0 ..< 41){
-                         Text("\($0) w")
-                     }
-                      .pickerStyle(WheelPickerStyle())
-                 }
-               
-            Picker(selection: $daysIndex, label: Text("days:")
-                .font(.system(size: 12)).fontWeight(.bold)
-                .minimumScaleFactor(0.001)
-                .padding(.horizontal, 2)
-                .scaledToFill()){
-                   ForEach(0 ..< 7){
-                       Text("\($0) d")
-                   }
-                    .pickerStyle(WheelPickerStyle())
-            }
-        }
-            Button(action:{
-                self.defaultweeks.set(self.weeksIndex, forKey: "week")
-                self.defaultweeks.set(self.daysIndex, forKey: "days")
-//                UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge]) { (status, _) in
-//                    if status {
-//
-//                        //contenuto della notifica
-//                        let content = UNMutableNotificationContent()
-//                        content.title = self.title
-//                        content.body = self.message
-//                        content.sound = UNNotificationSound.default
-//                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 15.0, repeats: false)
-//
-//                        let request = UNNotificationRequest(identifier: "noti", content: content, trigger: trigger)
-//                        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-//                        HostingController.init(self.rootView)
-//                    }
-//                    self.alert.toggle()
-//                    }
+            HStack{
+                Picker(selection: $hoursIndex , label: Text("Hours:")
+                    .font(.system(size: 12)).fontWeight(.bold)
+                    .minimumScaleFactor(0.001)
+                    .padding(.horizontal, 2)
+                    .scaledToFill()){
+                        ForEach(0 ..< 24){
+                            Text("\($0) h")
+                                .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
+                        }
+                        .pickerStyle(WheelPickerStyle())
+                }
                 
-            }) {
-        Text("Done")
-        }
+                Picker(selection: $minutesIndex, label: Text("Minutes:")
+                    .font(.system(size: 12)).fontWeight(.bold)
+                    .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
+                    .minimumScaleFactor(0.001)
+                    .padding(.horizontal, 2)
+                    .scaledToFill()){
+                        ForEach(0 ..< 60){
+                            Text("\($0) m")
+                        }
+                        .pickerStyle(WheelPickerStyle())
+                }
+            }
+            Button(action:{
+                //                da vedere per notificbhe
+                self.defaultHours.set(self.hoursIndex, forKey: "hours")
+                self.defaultMinutes.set(self.minutesIndex, forKey: "minutes")
+                self.dateComponents.hour = self.hoursIndex
+                self.dateComponents.minute = self.minutesIndex
+                self.showingAlert = true
+                
+                if (self.minutesIndex < 10){
+                    self.minuteString = "0\(self.minutesIndex)"
+                }
+                else {self.minuteString = String(self.minutesIndex)}
+               
+                if (self.hoursIndex < 10){
+                    self.hoursString = "0\(self.hoursIndex)"
+                }
+                else {self.hoursString = String(self.hoursIndex)}
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge]) { (status, _) in
+                    if status {
+                        
+                        //contenuto della notifica
+                        let content = UNMutableNotificationContent()
+                        content.title = self.title
+                        content.body = self.message
+                        content.sound = UNNotificationSound.default
+                        let trigger = UNCalendarNotificationTrigger(dateMatching: self.dateComponents, repeats: true)
+                        let request = UNNotificationRequest(identifier: "noti", content: content, trigger: trigger)
+                        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+                    }
+                    self.alert.toggle()
+                }
+                
+                }, label:{
+                    Text("Done")
+                })
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text("Notification Activated"), message: Text("You will recive a notification at \(self.hoursString):\(self.minuteString)"), dismissButton: .default(Text("Got it!")))
+            }
+                //                background del button
+                .background(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
         }.edgesIgnoringSafeArea(.bottom)
     }
 }
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SectionList()
+        SettingView()
     }
 }
