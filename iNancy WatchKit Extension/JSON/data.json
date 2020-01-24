@@ -45,7 +45,44 @@
         "suggestedWeeks": [
             6 , 7
         ]
-    }
+    },
+    
+    {
+        "id":1005,
+        "name":"Tree Pose",
+        "imageName":"tree",
+        "description":"An exercise that helps your legs",
+        "function":"Legs",
+        "duration":200,
+        "suggestedWeeks": [
+            6 , 7
+        ]
+    },
+    
+    {
+        "id":1006,
+        "name":"Bow Pose",
+        "imageName":"bow",
+        "description":"An exercise that helps your blood pressure",
+        "function":"Pressure",
+        "duration":200,
+        "suggestedWeeks": [
+            6 , 7
+        ]
+    },
+    
+    {
+           "id":1007,
+           "name":"Fish Pose",
+           "imageName":"fish",
+           "description":"An exercise that helps your back",
+           "function":"Back",
+           "duration":200,
+           "suggestedWeeks": [
+               1 , 2
+           ]
+       },
+    
     
 ]
 
