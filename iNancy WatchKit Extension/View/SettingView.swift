@@ -20,9 +20,9 @@ struct SettingView: View {
     var defaultMinutes = UserDefaults.standard
     @State private var showingAlert = false
     //    var defaultdays = UserDefaults.standard
-    let title = "It's time to train"
+    let title = "Have you already trained today?"
     
-    let message = "come and train"
+    let message = "Come and train"
     @State var alert = false
     
     
@@ -36,14 +36,12 @@ struct SettingView: View {
                     .scaledToFill()){
                         ForEach(0 ..< 24){
                             Text("\($0) h")
-                                .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
                         }
                         .pickerStyle(WheelPickerStyle())
                 }
                 
                 Picker(selection: $minutesIndex, label: Text("Minutes:")
                     .font(.system(size: 12)).fontWeight(.bold)
-                    .foregroundColor(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
                     .minimumScaleFactor(0.001)
                     .padding(.horizontal, 2)
                     .scaledToFill()){
@@ -89,7 +87,7 @@ struct SettingView: View {
                     Text("Done")
                 })
             .alert(isPresented: $showingAlert) {
-                Alert(title: Text("Notification Activated"), message: Text("You will recive a notification at \(self.hoursString):\(self.minuteString)"), dismissButton: .default(Text("Got it!")))
+                Alert(title: Text("Notification Activated"), message: Text("You will recive a notification at \(self.hoursString):\(self.minuteString)"), dismissButton: .default(Text("Dismiss")))
             }
                 //                background del button
                 .background(Color.init(red: 233/255.0, green: 0/255.0, blue: 132/255.0))
