@@ -15,6 +15,12 @@ struct ProgressionBarView: View {
     var body: some View {
         ZStack {
             Circle()
+                .stroke(Color.init(red: 45/255.0, green: 41/255.0, blue: 43/255.0), lineWidth: 10)
+
+            
+            .frame(width:130)
+                
+            Circle()
                 .trim(from: 0, to: value)
                 .stroke(LinearGradient.init(gradient: Gradient.init(colors: [Color.init(red: 233/255.0, green: 0/255.0, blue: 123/255.0), Color.init(red: 235/255.0, green: 74/255.0, blue: 159/255.0)]), startPoint: .top, endPoint: .bottom), lineWidth: 10)
 

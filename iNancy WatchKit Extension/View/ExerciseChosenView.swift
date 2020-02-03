@@ -25,6 +25,7 @@ struct ExerciseChosenView: View {
                 if (self.progressBarValue >= 1.0) {
                     WKInterfaceDevice.current().play(.success)
                     timer.invalidate()
+                    
                 }
             }
         }
